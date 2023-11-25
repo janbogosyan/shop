@@ -13,7 +13,7 @@ const ShopCategory = (props) => {
     console.log(typeof(all_product))
     return (
         <div className='shop-category'>
-            <img src={props.banner} alt='banner imgage' />
+            <img className='shopcategory-banner' src={props.banner} alt='banner imgage' />
             <div className="shopcategory-indexSort">
                 <p>
                     <span>Showing 1-12</span>out of 36 products
@@ -44,6 +44,9 @@ const ShopCategory = (props) => {
                         return <Item key={i} category={item.category} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
                     }
                 }) :  null } */}
+            </div>
+            <div className="shopcategory-loadmore">
+                Explore More
             </div>
         </div>
     )
