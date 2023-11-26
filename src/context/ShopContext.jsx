@@ -4,7 +4,7 @@ import all_product from '../components/assets/all_product.js';
 
 
 export const ShopContext = createContext(null);
-// console.log(ShopContext)
+//  console.log(ShopContext)
 
 const ShopContextProvider = (props) => {
     const contextValue = {all_product};
