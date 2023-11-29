@@ -1,11 +1,14 @@
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';   //routes
+
+import ShopCategory from './pages/ShopCategory';                   //pages
 import Shop from './pages/Shop';
-import ShopCategory from './pages/ShopCategory';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
 import LoginSignup from './pages/LoginSignup';
+
+import Navbar from './components/navbar/Navbar';                   //components
 import Footer from './components/footer/Footer';
 import men_banner from './components/assets/banner_mens.png'
 import women_banner from './components/assets/banner_women.png'

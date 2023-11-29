@@ -1,15 +1,18 @@
-import React, { useContext } from 'react'
-import './navbar.css'
-import logo from '../assets/logo.png'
-import cart_icon from '../assets/cart_icon.png'
-import { useState } from 'react'
+import React, { useContext,useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../../context/ShopContext'
+
+import './navbar.css'
+
+import logo from '../assets/logo.png'
+import cart_icon from '../assets/cart_icon.png'
+
+
 
 const Navbar = () => {
 
     const [menu, setMenu] = useState("shop");
-    const { getTotalCartItems } = useContext(ShopContext);
+    const { getTotalCartItems } = useContext(ShopContext);  //картинката cart(пазарната количка) е на една линия заедноо с "shop","men","women","kids" в нашия дизайн на website затова я слагаме и нея тук
 
     return (
         <div className='navbar'>
